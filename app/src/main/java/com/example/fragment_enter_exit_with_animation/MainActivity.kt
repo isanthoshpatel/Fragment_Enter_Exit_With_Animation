@@ -13,7 +13,7 @@ class MainActivity : AppCompatActivity() {
 
         bt_enter.setOnClickListener {
             supportFragmentManager.beginTransaction()
-                .setCustomAnimations(R.anim.enter_from_right,R.anim.exit_to_right,R.anim.exit_to_right,R.anim.enter_from_right)
+                .setCustomAnimations(R.anim.enter_from_right,R.anim.exit_to_right,R.anim.enter_from_right,R.anim.exit_to_right)
                 .addToBackStack("frag1")
                 .add(R.id.fl1,BlankFragment.newInstance("Hello","wellcome to all"))
                 .commit()
